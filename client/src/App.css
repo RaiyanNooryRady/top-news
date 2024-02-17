@@ -153,3 +153,55 @@ div.post-page a.edit-btn{
 a svg{
   height:20px;
 }
+.footer-area{
+  background-color: rgb(240,240,240);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.footer-area ul.footer-links{
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 2rem;
+}
+.footer-area ul li a{
+  color: black;
+}
+.footer-area ul li a:hover{
+  color: brown;
+}
+.footer-area .copyright-area{
+  margin-top: 20px;
+}
+.footer-area .copyright-area .copyright-text{
+  text-align: center;
+}
+.footer-area .copyright-area .copyright-text a{
+  color: brown;
+}
+.single-post-area .post-title{
+  font-size: xx-large;
+}
+.single-post-area .social-share span{
+  margin-right: 5px;
+}
+.footer-area .social-links a,
+.single-post-area .social-share a{
+  font-size: 18px;
+  display: inline-block;
+  background: gray;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-area .social-links a:hover,
+.single-post-area .social-share a:hover{
+  background-color: brown;
+
+}
