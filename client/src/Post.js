@@ -1,4 +1,4 @@
-export default function Post() {
+export default function Post({title,summary,cover,content}) {
     return (
         <div className="post">
         <image>
@@ -6,12 +6,12 @@ export default function Post() {
         </image>
         
         <div className="texts">
-          <h2>It is time for a new Africa beyond borders and boundaries</h2>
+          <h2>{title}</h2>
           <p className="info">
             <a className="author">Raiyan Noory</a>
             <time>17-02-2024 7:08</time>
           </p>
-          <p className="sumamry">African leaders will be convening in Ethiopia’s capital, Addis Ababa, for the 37th summit of the African Union on Saturday. Donkey thefts like this have become increasingly common across many parts of Africa - and in other parts of the world that have large populations of these working animals. </p>
+          <p className="sumamry">{summary} </p>
         </div>
 
       </div>
