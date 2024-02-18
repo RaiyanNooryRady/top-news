@@ -1,4 +1,6 @@
-export default function Post({title,summary,cover,content}) {
+import {formatISO9075} from "date-fns";
+import {Link} from "react-router-dom";
+export default function Post({title,summary,cover,content,createdAt,author}) {
     return (
         <div className="post">
         <image>
@@ -9,7 +11,7 @@ export default function Post({title,summary,cover,content}) {
           <h2>{title}</h2>
           <p className="info">
             <a className="author">Raiyan Noory</a>
-            <time>17-02-2024 7:08</time>
+            <time> {formatISO9075(new Date(createdAt))} </time>
           </p>
           <p className="sumamry">{summary} </p>
         </div>
